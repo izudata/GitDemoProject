@@ -1,0 +1,74 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "name": "a8271dd19910b229c555",
+  "position": {
+    "x": 10,
+    "y": 261,
+    "z": 1,
+    "height": 242,
+    "width": 663,
+    "tabOrder": 1
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "01_Measures_Table"
+                    }
+                  },
+                  "Property": "Cost"
+                }
+              },
+              "queryRef": "01_Measures_Table.Cost",
+              "nativeQueryRef": "Cost"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "01_Measures_Table"
+                  }
+                },
+                "Property": "Cost"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "e086504fe1d554069512",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "01_Measures_Table"
+              }
+            },
+            "Property": "Cost"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

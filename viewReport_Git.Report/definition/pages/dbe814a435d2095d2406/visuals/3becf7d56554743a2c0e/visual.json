@@ -1,0 +1,74 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "name": "3becf7d56554743a2c0e",
+  "position": {
+    "x": 683,
+    "y": 0,
+    "z": 3,
+    "height": 242,
+    "width": 597,
+    "tabOrder": 3
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "01_Measures_Table"
+                    }
+                  },
+                  "Property": "Profit_Margin_Percent"
+                }
+              },
+              "queryRef": "01_Measures_Table.Profit_Margin",
+              "nativeQueryRef": "Profit_Margin_Percent"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "01_Measures_Table"
+                  }
+                },
+                "Property": "Profit_Margin_Percent"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "4e66ffd820865a7824c9",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "01_Measures_Table"
+              }
+            },
+            "Property": "Profit_Margin_Percent"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}
